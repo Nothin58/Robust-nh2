@@ -1,92 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surpresa Fofa</title>
-    <link rel="icon" href="icone.png" type="image/png">
     <style>
         body {
-            background-color: #f0f8ff;
-            text-align: center;
-            font-family: 'Arial', sans-serif;
-        }
-
-        .title {
-            font-size: 3em;
-            margin-top: 50px;
-        }
-
-        .btn {
-            background-color: #ff69b4;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url('https://media.giphy.com/media/2yXxlnhqb9KqA/giphy.gif') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             color: white;
-            font-size: 1.5em;
-            padding: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        .button {
+            padding: 20px 40px;
+            font-size: 1.5rem;
+            color: white;
+            background-color: yellow;
             border: none;
             border-radius: 10px;
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
 
-        .btn:hover {
-            background-color: #ff1493;
-        }
-
-        .cat-img {
-            margin-top: 30px;
-            width: 300px;
-            animation: bounce 1s infinite;
-        }
-
-        .peter-img {
-            display: none;
-            margin-top: 30px;
-            width: 500px;
-        }
-
-        @keyframes bounce {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
-        }
-
-        .message {
-            font-size: 2em;
-            margin-top: 20px;
-            color: red;
-            font-weight: bold;
+        .button:hover {
+            background-color: #ffcc00;
         }
     </style>
 </head>
 <body>
-    <h1 class="title">Bem-vindo à Surpresa Fofa!</h1>
-    <img class="cat-img" src="https://placekitten.com/300/300" alt="Gatinho fofinho">
-    <br>
-    <button class="btn" id="surpresaBtn">Surpresa Fofa</button>
 
-    <!-- A imagem de Peter Griffin -->
-    <img class="peter-img" id="peterImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Peter_Griffin_2015.png/1200px-Peter_Griffin_2015.png" alt="Peter Griffin">
-    
-    <div class="message" id="message"></div>
+    <h1>Bem Vindo</h1>
+    <button class="button" onclick="window.location.href='https://youtu.be/F5e0LxletKU?si=rYY3Ezrdh4lsfMJ0'">Surpresa</button>
 
-    <!-- Áudio de peido -->
-    <audio id="fartSound" src="https://www.soundjay.com/button/beep-07.wav"></audio>
-
-    <script>
-        document.getElementById("surpresaBtn").addEventListener("click", function() {
-            // Mostra a imagem de Peter Griffin
-            document.getElementById("peterImg").style.display = "block";
-
-            // Exibe a mensagem de "tu pegou vírus"
-            document.getElementById("message").innerText = "Tu pegou vírus._.";
-
-            // Tocar o som de peido
-            var fartSound = document.getElementById("fartSound");
-            fartSound.play();
-        });
-    </script>
 </body>
-      </html>
+</html>
